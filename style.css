@@ -423,36 +423,92 @@ body{
     height: 30px;
     border: none;
 }
-.section-2 {
-    margin: 20px;
-    padding: 20px;
+.sec-2{
+    width:100%;
+    height:315px;
+    padding:25px;
+    padding-top:0;
+    padding-bottom: 25px;
+}
+.sec-2 h3{
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-top:5px;
+}
+.slide-sec{
+    height: 100%;
+    width:100%;
+    padding:35px;
+    overflow-x: hidden;
     background-color: white;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
-.section-2 .section-2-container h3 {
-    margin-bottom: 10px;
-}
-.section-2 .section-2-container .product-cards {
+.product-slide{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    margin-top: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
-
-.section-2 .section-2-container .product-card {
-    display: inline-block;
-    width: 300px !important;
-    flex: 0 0 auto;
+.product-slide::-webkit-scrollbar{
+    background-color: transparent;
+    height:7px; 
+    cursor: pointer;
+}
+.product-slide::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-slide li{
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.l-btn, 
+.r-btn{
+    background-color: rgb(255,255,255,1);
+    height:90px;
+    width:50px;
+    text-align: center;
+    cursor:pointer;
+    top:50%;
+    position: absolute; 
+    border:2px solid transparent; 
+}
+.l-btn{
+    border-radius: 0 5px 5px 0;
+    left:10px;
+}
+.r-btn{
+    border-radius: 5px 0 0 5px;
+    right:10px;
+}
+.l-btn:hover{
+    border: 3px solid rgb(2,150,150);
+}
+.r-btn:hover{
+    border: 3px solid rgb(2,150,150);
+}
+.r-btn i, .l-btn i{
+    color: rgb(54,54,54);
+    position:absolute;
+    font-size: 30px;
+    top:35%;
+    left:12%;
+    right:12%;
+}
+.slide-sec h3{
+    font-size: 20px;
+    margin-top:5px;
+    margin-bottom: 0;
+}
+.product-slide.product-slide-1{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.section-2 .section-2-container .product-card img {
-    width: auto;
-    height: auto;
-    max-width: 270px;
-    max-height: 200px;
+    margin-top: 35px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 .section-3 {
     background-color: white;
