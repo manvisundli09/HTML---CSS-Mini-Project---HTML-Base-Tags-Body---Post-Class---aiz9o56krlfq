@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1134e4353e.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    <title>Amazon | Sign in</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="hdn-head">
+            <h2>Hello, Sign in</h2>
+        </div>
+        <div class="hdn-content">
+            <h3>Trending</h3>
+            <ul>    
+                <div>
+                    <li><a class="product-detail-link" href="./product.html">Best Sellers</a></li>
+                </div>
+                <div>
+                    <li>New Releases</li>
+                </div>
+                <div>
+                    <li>Movers and Shakers</li>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h3>Digital Content & Devices</h3>
+            <ul>
+                <div>
+                    <li>Amazon Music</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Amazon Prime Video</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Fire TV</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div>
+                    <li>Eco & Alexa</li><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </ul>
+            <div class="line"></div>
+        </div>
+    </div>
+    <i class="fa-solid fa-xmark"></i>
+    <div class="triangle"></div>
+    <div class="hdn-sign">
+        <div class="hdn-table">
+            <div>
+                <h3>Your Lists</h3>
+                <ul>
+                    <li>Creat a List</li>
+                </ul>
+            </div>
+            <div class="hdn-line"></div>
+            <div>
+                <h3>Your Account</h3>
+                <ul>
+                    <li><a class="signin" href="./signin.html">Sign in</a></li>
+                    <li>Your Account</li>
+                    <li>Your Orders</li>
+                    <li>Your Wish List</li>
+                    <li>Your Recommendations</li>
+                    <li>Your Prime Membership</li>
+                    <li>Your Prime Video</li>
+                    <li>Your Subscribe & Save Items</li>
+                    <li>Memberships & Subscriptions</li>
+                    <li>Manage Your Content and Devices</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="black"></div>
+    <header>
+        <div class="first">
+            <div class="flex logo">
+                <a href="#"><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt=""> </a>
+                <div class="map flex">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span>Deliver to</span>
+                        <span>India </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex input">
+                <div>
+                    <span>All</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <input type="text">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="flex right">
+                <div class="flex lang">
+                    <img src="https://www.mapsofindia.com/maps/india/india-flag.jpg" alt="">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sign">
+                    <span>Hello, Sign in</span>
+                    <div class="flex ac">
+                        <span>Account & Lists</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="sign">
+                    <span>Return</span>
+                    <span>& Orders</span>
+                </div>
+                <div class="flex cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="cart" href="/cart.html"><span class="ca">Cart</span></a>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="second-1">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                    <span>All</span>
+                </div>
+            </div>
+            <div class="second-2">
+                <ul>
+                    <li>Today's Deal</li>
+                    <li>Customer Service</li>
+                    <li>Registry</li>
+                    <li>Gift Cards</li>
+                    <li>Sell</li>
+                </ul>
+            </div>
+            <div class="second-3">
+                <span>Great Republic Day Sale</span>
+            </div>
+        </div>
+    </header>
+    <div class="sign-in">
+        <h1>Sign in</h1>
+        <form id="form" action="" method="POST">
+            <ul><label for="name">Name</label>
+                <input id="name" type="text" placeholder="Type Your Name" required>
+            </ul><br>
+            <ul><label for="email">Email</label>
+                <input id="email" type="email" placeholder="Type Your Email" required>
+            </ul><br>
+            <ul><label for="gender">Gender</label>
+                <input type="radio" id="femalegender" name="gender" required>
+                <label for="femalegender">Female</label>
+                <input type="radio" id="malegender" name="gender" required>
+                <label for="malegender">Male</label>
+            </ul><br>
+            <ul><label for="phone">Phone Number</label>
+                <input id="phone" type="number" maxlength="10" minlength="10" placeholder="Type Your Phone Number" required>
+            </ul><br>
+            <ul><label for="age">Age</label>
+                <input id="age" type="number" placeholder="Type Your Age" required>
+            </ul><br>
+            <ul><label for="dob">DOB</label>
+                <input id="dob" type="date" required>
+            </ul><br>
+            <ul><label for="password">Password</label>
+                <input id="password" type="password" required>
+            </ul><br>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
