@@ -100,7 +100,7 @@ var ShoppingCart = (function($) {
 	  if(productsInCart.length > 0) {
 		emptyCartEl.style.display = "block";
 		cartCheckoutEl.style.display = "block"
-		totalPriceEl.innerHTML = "$" + calculateTotalPrice();
+		totalPriceEl.innerHTML = "Rs. " + calculateTotalPrice();
 	  } else {
 		emptyCartEl.style.display = "none";
 		cartCheckoutEl.style.display = "none";
@@ -166,6 +166,6 @@ var ShoppingCart = (function($) {
 	};
 	
 
-  });
+  })(jQueury);
   
   ShoppingCart.init();
