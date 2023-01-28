@@ -166,6 +166,6 @@ var ShoppingCart = (function($) {
 	};
 	
 
-  })(jQuery);
+  });
   
   ShoppingCart.init();
