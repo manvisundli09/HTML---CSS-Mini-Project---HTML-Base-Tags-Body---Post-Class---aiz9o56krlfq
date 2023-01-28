@@ -1,5 +1,5 @@
 var ShoppingCart = (function($) {
-	"use strict";
+	
 	
 	
 	var productsEl = document.querySelector(".products"),
