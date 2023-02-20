@@ -688,3 +688,61 @@ body{
     height: 300px;
 
 }
+@media only screen and (max-width: 360px) {
+    body{
+        width: 414px;
+        height: 100%;
+    }
+    header{
+        display: block;
+    }
+    .first{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .input input{
+        width: 170px;
+    }
+    .lang{
+        display: none;
+    }
+    .return{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    .second-3{
+        display: none;
+    }
+    .product-comp{
+        flex-direction: column;
+    }
+    .product-comp .box{
+        width: 350px;
+        height: 230px;
+        display: grid;
+        justify-content: space-evenly;
+    }
+    .box-b{
+        width: 350px;
+        height: 130px;
+    }
+    .box-b img{
+        display: none;
+    }
+    .detail{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .triangle{
+        right: 25px
+    }
+    .hdn-sign{
+        width: 300px;
+        right: 10px;
+    }
+  }
