@@ -95,3 +95,25 @@ async function fetchProducts() {
     }
   });
   
+  //-------------------------------------------------------------------------------------------------------
+  
+  function displayProducts(products) {
+    const productList = document.getElementById('product-list');
+    productList.innerHTML = '';
+  
+    if (products.length === 0) {
+      productList.style.display = 'none';
+      return;
+    }
+  
+    productList.style.display = 'block';
+  
+    products.forEach((product) => {
+      const item = document.createElement('div');
+      const productLink = document.createElement('a'); // Create an anchor element
+      productLink.href = './product.html'; // Set the href attribute to the product page URL
+      productLink.textContent = product.title; // Set the link text to the product title
+      item.appendChild(productLink); // Append the anchor element to the item
+      productList.appendChild(item);
+    });
+  }
